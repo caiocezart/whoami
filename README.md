@@ -5,6 +5,8 @@
 TL;DR: involved with technology for the past 15 years, loves to learn new things and enjoy automating everything. From Networking to Ful Stack Development, on-premises to cloud, can tackle any complex scenarios and is used with fast-paced transformation environments.
 
 - Website: [www.caiotrevisan.com](https://www.caiotrevisan.com)
+- Linkedin: [linkedin.com/in/caiocezart/](https://www.linkedin.com/in/caiocezart/)
+
 
 ## Index
 
@@ -49,26 +51,26 @@ TL;DR: involved with technology for the past 15 years, loves to learn new things
 
 ### Cloud Native Computing Foundation
 
-<img src="https://www.caiotrevisan.com/static/img/cka.png" style="width: 15%;">
-<img src="https://www.caiotrevisan.com/static/img/ckad.png" style="width: 15%;">
+- Certified Kubernetes Administrator
+- Certified Kubernetes Application Developer
 
 
 ### Amazon Web Services
 
-<img src="https://www.caiotrevisan.com/static/img/SA-Professional.png" style="width: 10%;">
-<img src="https://www.caiotrevisan.com/static/img/DevOps-Professional.png" style="width: 10%;">
-<img src="https://www.caiotrevisan.com/static/img/Networking.png" style="width: 10%;">
-<img src="https://www.caiotrevisan.com/static/img/BigData.png" style="width: 10%;">
-<img src="https://www.caiotrevisan.com/static/img/Security.png" style="width: 10%;">
-<img src="https://www.caiotrevisan.com/static/img/SA-Associate.png" style="width: 10%;">
-<img src="https://www.caiotrevisan.com/static/img/SysOp-Associate.png" style="width: 10%;">
-<img src="https://www.caiotrevisan.com/static/img/DEV-Associate.png" style="width: 10%;">
-<img src="https://www.caiotrevisan.com/static/img/CloudPractitioner.png" style="width: 10%;">
+- AWS Certified Cloud Practitioner
+- AWS Certified Developer - Associate
+- AWS Certified SysOps Administrator - Associate
+- AWS Certified Solutions Architect - Associate
+- AWS Certified Solutions Architect - Professional
+- AWS Certified DevOps Engineer - Professional
+- AWS Certified Advanced Networking - Specialty
+- AWS Certified Security - Specialty
+- AWS Certified Big Data - Specialty
 
 
 ### Google Cloud Platform
 
-<img src="https://www.caiotrevisan.com/static/img/GCP.png" style="width: 15%;">
+- Google Cloud Certified - Professional Cloud Architect
 
 
 ## Recent Learnings
