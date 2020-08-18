@@ -1,6 +1,6 @@
-# whois
+# whoami
 
-#### Caio Trevisan
+## Caio Trevisan
 
 TL;DR: involved with technology for the past 15 years, loves to learn new things and enjoy automating everything. From Networking to Ful Stack Development, on-premises to cloud, can tackle any complex scenarios and is used with fast-paced transformation environments.
 
@@ -32,19 +32,18 @@ TL;DR: involved with technology for the past 15 years, loves to learn new things
 
 ## Introduction
 
-- Foreign immigrant from Brazil, got permanent residency and later citizenship through a  sponsorship working as a Network Admin/Full Stack Developer
+- Foreign immigrant from Brazil, got permanent residency and later citizenship through a sponsorship working as a Network Admin/Full Stack Developer
 - Started in IT doing Computer Games servers at home (Ragnarok, Tibia, etc)
 - Served 5 years in the Airforce as a Sys/Network Administrator
 - Diploma in Information Technology and Bachelor in Networking
-- IT Consultant helping big enterprise companies moving to the cloud or improve existing environments
+- Technical Consultant helping big enterprise companies moving to the cloud or improve existing environments
 
 
 ## Academic Curriculum
 
   - Diploma in Information Technology
   - Bachelor in Networking with University being both in Brazil and an extra year at University of Technology, Sydney (UTS)
-  - Certificate IV in Commercial Cookery (TAFE) (in progress)
-  - Applied to start in 2020: Master of Science in Computer Science
+  - Certificate III in Commercial Cookery (TAFE)
 
 
 ## Industry Certifications
@@ -75,6 +74,9 @@ TL;DR: involved with technology for the past 15 years, loves to learn new things
 
 ## Recent Learnings
 
+- AWS
+  - Shared Networking Architecture
+  - Elastic Kubernetes Service
 - Google Cloud Platform
 - Kubernetes Administration
   - cluster management
@@ -104,12 +106,14 @@ TL;DR: involved with technology for the past 15 years, loves to learn new things
 
 - Focused on improving soft and leadership skills
 - Work more with people and impact on other lifes
-- Public Speaking
+- Develop the sense of community on both personal and professional life
+  - sharing knowledge and helping others getting started with DevOps/Cloud space
+  - enabling people to achieve more rather than doing
 - Blameless culture
   - post mortums
   - brownbags from learnings
   - pair programming
-- Explore data, machine learning and IA
+- Explore data, machine learning and AI
 
 
 ## Hobbies
@@ -118,24 +122,168 @@ TL;DR: involved with technology for the past 15 years, loves to learn new things
   - Brazilian professonal community that work with IT living in Melbourne
   - Over 300 members
   - bi-monthly meetups with a mix of technical and local market opportunities talks with over 80 people attendance
-- Studying to be an accreditate Chef
-  - Last semester of a Certificate IV TAFE in Commercial Cookery 
 - Practicing sports (soccer + tennis)
   - Always happy to be involved in any physical activities
 - Listen to audio books
-  - Recent ones are: Dare to Lead, Phoenix Project (again), Leaders Eat Last
+  - Recent ones are
+    - Dare to Lead
+    - Phoenix Project (again)
+    - Leaders Eat Last
 
 
 ## Professional Projects
 
-- [Warehouse WIFI modernisation](#14k-square-meters-Warehouse-WIFI-modernisation)
-- [Wholesale returns product portal](#Wholesale-returns-product-portal)
-- [Powercycling cloud resources](#Powercycling-cloud-resources)
-- [IAM Automation](#IAM-Automation)
+- [AWS Landing Zone](#aws-landing-zone)
 - [Infrastructure migration from Azure to AWS](#Infrastructure-migration-from-Azure-to-AWS)
 - [Many infrastructure modernisation from on-premise to AWS](#Many-infrastructure-modernisation-from-on-premise-to-AWS)
 - [Kubernetes greenfield project](#Kubernetes-greenfield-project)
 - [Spot Instances](#spot-instances)
+- [Warehouse WIFI modernisation](#14k-square-meters-Warehouse-WIFI-modernisation)
+- [Wholesale returns product portal](#Wholesale-returns-product-portal)
+- [Powercycling cloud resources](#Powercycling-cloud-resources)
+- [IAM Automation](#IAM-Automation)
+
+#### Personal projects
+
+### AWS Landing Zone
+
+- have gone through this process countless times from startups with less than 10 employees to big corporations with few thousands of people.
+
+#### problem
+
+- companies in highly regulated and complex environments want to get started with AWS on a secure way providing all tools required and enabling people to move their existing applications to the cloud.
+
+#### project
+
+- stablish AWS foundations
+- develop guardrails to safekeep companies data and protect users on doing what is not allowed to
+- some projects would required to keep a hybrid networking from onpremise and the cloud
+- upskilling of company employess involved in the process
+- help stakeholders to showcase value of the new platform providing few use cases and documentation around best practices
+
+#### solution
+
+- discovery sessions to identify project and business requirements
+- architect and design tech decisions and toolings to be used
+- form teams of engineers that can get started with new tech
+- provide training, sharing knowledge sessions, brown bags, lunch and learns, etc
+- start building solution based on infrastructure as code and automation as much as possible
+- testing and CI/CD implementation as soon as the team and code base are mature enough
+- discovery sessions on possible pilots to be used as use case and POC for the new platform
+- prove tech choices and code examples and build a migration pattern around it
+- build cross-teams trust and relationship breaking out any existing silos
+- help externals teams to re-use patterns and start finding ways to migrate applications
+
+
+### Infrastructure migration from Azure to AWS
+
+#### problem
+
+- company need to move around 40 apps with databases (most mysql) and 1PB of data from Azure to AWS.
+
+#### project
+
+- stablish AWS foundations
+- upgrade existing databases to be compatible with managed servers
+- upgrade Windows Server pet instances to auto-scaling groups
+- connect Azure > Client DC > AWS through direct fiber connection
+- application cutovers
+
+#### solution
+
+- AWS Direct Connect project to client datacentre
+- Dynamic routing configuration between Azure > Client DC > AWS
+- Local application to buffer blob storage from Azure express route and send to AWS S3
+- AWS Landing Zone foundations (Identity, Audit, Shared, Envs)
+- Migration of .NET framework apps to EC2 on auto-scaling groups
+- AWS ASG automation to join cattle instances to AD and cleaning up jobs
+- Octopus Deploy for CICD
+  - deployment strategies (blue/green, canary)
+- Mysql database upgrades to be compatible with AWS Aurora
+- once everything ready, required downtime for a last minute database backup/restore and DNS cutover
+
+
+### Many infrastructure modernisation from on-premise to AWS
+
+#### problem
+
+- companies want to move from onpremise to cloud
+
+#### project
+
+- discovery sessions for identifying workloads that need migrationa
+- case by case identify lift and shifts and application modernisation
+- go to containers where possible
+- cloud foundations (accounts, baseline security, integration with existing IDP)
+- infrastructure as code -> CICD
+- team upskilling to manage new infrastructure (brownbags, 101)
+
+
+### Kubernetes greenfield project
+
+#### problem
+
+- stablish a multi-cluster Kubernetes infrastructure in the cloud on a highly regulated environment
+- traditional slow-paced environment
+- not agile
+- internal politics
+- people egos
+
+#### project
+
+- iterations and discovery to decide which cloud provider
+- security controls
+- architecture diagrams
+- proof of concepts
+- cloud native
+- golang
+- everything as code
+
+#### solution
+
+- squads formed
+- breaking silos and working cross-teams
+- agile methodologies used
+- blameless culture implemented
+- Kubernets on GCP due to better support for Kubernetes (GKE)
+- security control tools analysis and comparison
+  - twistlock
+  - gatekeeper
+  - conftest
+  - psp
+  - network policies
+  - rbac integration with local IDP
+- cluster design and automation
+  - nodepool isolation (ingress, egress, tiers)
+  - security by default
+  - cluster bootstrap automation (namespaces)
+  - 3musketeers + helm charting
+- gatekeeper
+  - matching security GKE controls to opa policies
+  - deployment/patching/update automation
+- workload isolation
+  - istio service mesh
+  - namespace communication isolation
+  - binary authentication
+
+
+### Spot Instances
+
+- CI/CD private workers using ECS with Spot instances
+  - $15/month
+- Kubernetes spot instances node
+  - non-critical batch jobs
+  - cicd workers
+  - intesive resource data jobs
+  - peak traffic
+  - cluster auto-scaler(CA)
+  - interrupt-handler
+  - horizontal pod autoscaler (HPA)
+  - disruption budget
+  - use of affinity/taints/tolerations
+- CS:GO Server running on ECS + Spot Blocks. API request to API Gateway + lambda will trigger spot block for X hours and bring down stack when not needed.
+
+- https://github.com/caiocezart/k8s-spot
 
 
 ### Warehouse WIFI modernisation
@@ -157,6 +305,7 @@ TL;DR: involved with technology for the past 15 years, loves to learn new things
 #### results
 
 - effective physical installation of all new hardware with zero downtime
+
 
 ### Wholesale returns product portal
 
@@ -234,112 +383,3 @@ TL;DR: involved with technology for the past 15 years, loves to learn new things
 - any errors, lambdas will post log to Github Pull Request
 - admins have manual controls to override tests through Github labels
 
-
-### Infrastructure migration from Azure to AWS
-
-#### problem
-
-- company need to move around 40 apps with databases (most mysql) and 1PB of data from Azure to AWS.
-
-#### project
-
-- stablish an AWS foundations
-- upgrade existing databases to be compatible with managed servers
-- upgrade Windows Server pet instances to auto-scaling groups
-- connect Azure > Client DC > AWS through direct fiber connection
-- application cutovers
-
-#### solution
-
-- AWS Direct Connect project to client datacentre
-- Dynamic routing configuration between Azure > Client DC > AWS
-- Local application to buffer blob storage from Azure express route and send to AWS S3
-- AWS Landing Zone foundations (Identity, Audit, Shared, Envs)
-- Migration of .NET framework apps to EC2 on auto-scaling groups
-- AWS ASG automation to join cattle instances to AD and cleaning up jobs
-- Octopus Deploy for CICD
-  - deployment strategies (blue/green, canary)
-- Mysql database upgrades to be compatible with AWS Aurora
-- once everything ready, required downtime for a last minute database backup/restore and DNS cutover
-
-
-### Many infrastructure modernisation from on-premise to AWS
-
-#### problem
-
-- companies want to move from onpremise to cloud
-
-#### project
-
-- discovery sessions for identifying workloads that need migrationa
-- case by case identify lift and shifts and application modernisation
-- go to containers where possible
-- cloud foundations (accounts, baseline security, integration with existing IDP)
-- infrastructure as code -> CICD
-- team upskilling to manage new infrastructure (brownbags, 101)
-
-
-### Kubernetes greenfield project
-
-#### problem
-
-- stablish a multi-cluster Kubernetes infrastructure in the cloud on a highly regulated environment
-- traditional slow-paced environment
-- not agile
-- internal politics
-- people egos
-
-#### project
-
-- iterations and discovery to decide which cloud provider
-- security controls
-- architecture diagrams
-- proof of concepts
-- cloud native
-- golang
-- everything as code
-
-#### solution
-
-- Kubernets on GCP due to better support for Kubernetes (GKE)
-- security control tools analysis and comparison
-  - twistlock
-  - gatekeeper
-  - conftest
-  - psp
-  - network policies
-  - rbac integration with local IDP
-- cluster design and automation
-  - nodepool isolation (ingress, egress, tiers)
-  - security by default
-  - cluster bootstrap automation (namespaces)
-  - 3musketeers + helm charting
-- gatekeeper
-  - matching security GKE controls to opa policies
-  - deployment/patching/update automation
-- workload isolation
-  - istio service mesh
-  - namespace communication isolation
-  - binary authentication
-
-
-### Spot Instances
-
-#### Personal projects
-
-- CI/CD private workers using ECS with Spot instances
-  - $15/month
-- Kubernetes spot instances node
-  - non-critical batch jobs
-  - cicd workers
-  - intesive resource data jobs
-  - peak traffic
-  - cluster auto-scaler(CA)
-  - interrupt-handler
-  - horizontal pod autoscaler (HPA)
-  - disruption budget
-  - use of affinity/taints/tolerations
-- CS:GO Server running on ECS + Spot Blocks. API request to API Gateway + lambda will trigger spot block for X hours and bring down stack when not needed.
-
-
-- https://github.com/caiocezart/k8s-spot
